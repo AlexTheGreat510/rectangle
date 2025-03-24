@@ -6,34 +6,34 @@ import "fmt"
 
 func main() {
 
-    /* default cube info */
+    /* default rectangle info */
 
-    var cubeWidth int = 5
-    var cubeHeight int = 5
-    var cubeAtom string = "*"
+    var rectangleWidth int = 5
+    var rectangleHeight int = 5
+    var rectangleAtom string = "*"
 
-    /* take user input for cube info */
+    /* take user input for rectangle info */
 
-    fmt.Print("Enter cube width: ")
-    fmt.Scanln(&cubeWidth)
+    fmt.Print("Enter rectangle width: ")
+    fmt.Scanln(&rectangleWidth)
 
-    fmt.Print("Enter cube height: ")
-    fmt.Scanln(&cubeHeight)
+    fmt.Print("Enter rectangle height: ")
+    fmt.Scanln(&rectangleHeight)
 
-    fmt.Print("Enter cube atom: ")
-    fmt.Scanln(&cubeAtom)
+    fmt.Print("Enter rectangle atom: ")
+    fmt.Scanln(&rectangleAtom)
 
-    /* generate cube row based on info */
+    /* generate rectangle row based on info */
 
-    var cubeRow string
+    var rectangleRow string
 
-    for i:=1; cubeWidth>=i; i++ {
-        cubeRow += cubeAtom
+    for i:=1; rectangleWidth>=i; i++ {
+        rectangleRow += rectangleAtom
     }
 
-    /* generate cube based on info */
+    /* generate rectangle based on info */
 
-    for i:=1; cubeHeight>=i; i++ {
-        fmt.Println(cubeRow)
+    for i:=1; rectangleHeight>=i; i++ {
+        fmt.Println(rectangleRow)
     }
 }

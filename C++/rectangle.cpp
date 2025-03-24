@@ -11,34 +11,34 @@ using namespace std;
 
 int main()
 {
-    /* default cube info */
+    /* default rectangle info */
 
-    int cube_width = 5;
-    int cube_height = 5;
-    string cube_atom = "*";
+    int rectangle_width = 5;
+    int rectangle_height = 5;
+    string rectangle_atom = "*";
 
-    /* take user input for cube info */
+    /* take user input for rectangle info */
 
-    cout << "Enter cube width: ";
-    cin >> cube_width;
+    cout << "Enter rectangle width: ";
+    cin >> rectangle_width;
 
-    cout << "Enter cube height: ";
-    cin >> cube_height;
+    cout << "Enter rectangle height: ";
+    cin >> rectangle_height;
 
-    cout << "Enter cube atom: ";
-    cin >> cube_atom;
+    cout << "Enter rectangle atom: ";
+    cin >> rectangle_atom;
 
-    /* generate cube row based on info */
+    /* generate rectangle row based on info */
 
-    string cube_row;
+    string rectangle_row;
 
-    for (int i=1; cube_width>=i; i++)
-        cube_row += cube_atom;
+    for (int i=1; rectangle_width>=i; i++)
+        rectangle_row += rectangle_atom;
 
-    /* generate cube based on info */
+    /* generate rectangle based on info */
 
-    for (int i=1; cube_height>=i; i++)
-        cout << cube_row << endl;
+    for (int i=1; rectangle_height>=i; i++)
+        cout << rectangle_row << endl;
 
     /* return no error at the end */
     return NO_ERROR;

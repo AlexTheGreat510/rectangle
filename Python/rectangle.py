@@ -1,10 +1,10 @@
 # take cube info from user
 
-cubeWidth = int(input("Enter cube width: "))
-cubeHeight = int(input("Enter cube height: "))
-cubeAtom = str(input("Enter cube atom: "))
+rectangle_width = int(input("Enter rectangle width: "))
+rectangle_height = int(input("Enter rectangle height: "))
+rectangle_atom = str(input("Enter rectangle atom: "))
 
-# generate cube based on info
+# generate rectangle based on info
 
-cubeRow = cubeAtom * cubeWidth
-for i in range(cubeHeight): print(cubeRow)
+rectangle_row = rectangle_atom * rectangle_width
+for i in range(rectangle_height): print(rectangle_row)

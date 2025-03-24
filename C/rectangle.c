@@ -28,31 +28,31 @@ char *repeat_str(char *str, size_t count)
 
 bool main()
 {
-    /* default cube info */
+    /* default rectangle info */
 
-    int cube_width = 5;
-    int cube_height = 5;
-    char cube_atom[] = "*";
+    int rectangle_width = 5;
+    int rectangle_height = 5;
+    char rectangle_atom[] = "*";
 
-    /* take user input for cube info */
+    /* take user input for rectangle info */
 
-    printf("Enter cube width: ");
-    scanf("%d", &cube_width);
+    printf("Enter rectangle width: ");
+    scanf("%d", &rectangle_width);
 
-    printf("Enter cube height: ");
-    scanf("%d", &cube_height);
+    printf("Enter rectangle height: ");
+    scanf("%d", &rectangle_height);
 
-    printf("Enter cube atom: ");
-    scanf("%s", &cube_atom);
+    printf("Enter rectangle atom: ");
+    scanf("%s", &rectangle_atom);
 
-    /* generate cube row based on info */
+    /* generate rectangle row based on info */
 
-    char *cube_row = repeat_str(cube_atom, cube_width);
+    char *rectangle_row = repeat_str(rectangle_atom, rectangle_width);
 
-    /* generate cube based on info */
+    /* generate rectangle based on info */
 
-    for (int i=1; cube_height>=i; i++)
-        puts(cube_row);
+    for (int i=1; rectangle_height>=i; i++)
+        puts(rectangle_row);
 
     /* return no error at the end */
 
